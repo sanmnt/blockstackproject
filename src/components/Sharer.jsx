@@ -2,6 +2,7 @@ import React from 'react';
 import { Flex, Box, Text, Input, useClipboard } from '@blockstack/ui';
 import { ChainIcon } from './icons/chain';
 import { userSession } from '../auth';
+import { PublicUrlRegistrar} from "./PublicUrlRegistrar";
 
 export const Sharer = ({ togglePublic, isPublic }) => {
   const { username } = userSession.loadUserData();
@@ -66,6 +67,9 @@ export const Sharer = ({ togglePublic, isPublic }) => {
                   >
                     Make private
                   </Text>
+                </Box>
+                <Box px={3}>
+                  <PublicUrlRegistrar userSession={userSession} />
                 </Box>
               </Flex>
             </Box>
