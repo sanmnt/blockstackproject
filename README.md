@@ -15,3 +15,4 @@ git clone https://github.com/blockstack/todos && cd todos
 yarn install
 yarn run start
 ```
+*NOTE:THIS IS OUTDATED AND SHOULD NOT BE USED*
